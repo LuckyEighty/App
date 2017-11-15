@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +12,5 @@ let mix = require('laravel-mix');
  */
 mix.browserSync('localhost:8000');
 mix.js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/bootstrap.js', 'public/js')
    .sass('resources/assets/sass/app.sass', 'public/css');
