@@ -16,6 +16,10 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('navbar', require('./components/navbar.vue'));
+Vue.component('contant', require('./components/contant.vue'))
+
+window.Event = new Vue();
 
 const app = new Vue({
     el: '#app'

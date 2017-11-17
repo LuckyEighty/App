@@ -12,12 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/playground/index', function () {
-   return view('playground.index');
-});
 
 Route::get('/playground/vue', function () {
     return view('playground.vue');
